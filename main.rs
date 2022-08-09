@@ -3,11 +3,10 @@ fn first_word(word: String) -> String {
     let mut result: String = String::new();
 
     for character in word.chars() {
-        if character != ' ' {
-            result.push(character);
-        } else {
+        if character == ' ' {
             break;
         }
+        result.push(character);
     }
     return result;
 }
